@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<style>
+    body > div {
+        display: flex;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        body > div {
+            flex-wrap: wrap;
+        }
+    }
+
+    body > div > div {
+        flex: 1 100%;
+    }
+
+    body > div > div:nth-child(1) {
+        background: red;
+    }
+
+    body > div > div:nth-child(2) {
+        background: blue;
+    }
+
+    body > div > div:nth-child(3) {
+        background: yellow;
+    }
+</style>
+
+<body>
+<div>
+    <div>
+        First
+    </div>
+    <div>
+        Second
+    </div>
+    <div>
+        Third
+    </div>
+</div>
+
+</body>
+</html>
